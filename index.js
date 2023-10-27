@@ -1,4 +1,5 @@
-let Parser = require('rss-parser')
+const { writeFile } = require('node:fs/promises')
+const Parser = require('rss-parser')
 let parser = new Parser({
 	customFields: {
 		item: [
